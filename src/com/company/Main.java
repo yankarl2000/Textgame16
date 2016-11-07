@@ -19,5 +19,7 @@ public class Main {
         sc = (c%2==0);
         boolean s1 = sa && sb || sa && sc || sb && sc;
         out.println(s1);
+        out.println("Hello world");
+
     }
 }
