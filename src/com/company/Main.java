@@ -1,25 +1,21 @@
 package com.company;
 
-import java.io.PrintStream;
-import java.util.Scanner;
+
+import java.io.IOException;
 
 public class Main {
-    public static Scanner in = new Scanner(System.in);
-    public static PrintStream out = System.out;
-    public static void main(String[] args) {
-        boolean sa = false;
-        boolean sb = false;
-        boolean sc = false;
-        int a, b, c;
-        a = in.nextInt();
-        b = in.nextInt();
-        c = in.nextInt();
-        sa = (a%2==0);
-        sb = (b%2==0);
-        sc = (c%2==0);
-        boolean s1 = sa && sb || sa && sc || sb && sc;
-        out.println(s1);
-        out.println("Hello world");
+    public static void main(String[] args) throws IOException {
+        Game game = new Game();
+        System.out.println(game.result);
+        /*int num = 0;
+        Situation situation_previous = new Situation();
+
+        Decision decision = new Decision();
+
+        Situation situation_next = new Situation();
+
+        System.out.println(situation_next.s);
+*/
 
     }
 }
